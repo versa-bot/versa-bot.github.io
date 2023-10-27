@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Versa - the only multipurpose discord bot you will ever need.</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+    <link rel="shortcut icon" href="assets/logo.png" type="">
+  </head>
+  <body class="has-background-black">
+    <section class="hero is-black is-fullheight">
+      <div class="hero-head">
+        <header class="navbar mt-4">
+          <div class="container">
+            <div class="navbar-brand">
+              <img src="assets/logo.png" width="70" height="70" alt="Logo" />
+              <span
+                id="openMenu"
+                class="navbar-burger burger"
+                data-target="navbarMenuHeroC"
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+            <div
+              id="navbarMenuHeroC"
+              class="navbar-menu"
+              data-aos="fade-down"
+              data-aos-duration="2000"
+            >
+              <div class="navbar-end">
+                      <a class="navbar-item nav-link" href="#">Features</a>
+                <a class="navbar-item">Documentation</a>
+                <a class="navbar-item" href="https://discord.gg/Qy5yV3xCQe">Support server</a>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="hero-body">
+        <div
+          class="container has-text-left is-flex is-align-items-center is-flex-wrap-wrap is-justify-content-space-between container-res"
+        >
+          <div>
+            <h1 class="title">Versa</h1>
+            <h2 class="subtitle">Versa is a multifunction discord bot for (auto)moderation, security, utilities and fun.</h2>
+            <button class="button is-warning mr-2" onclick="invite()">Invite</button>
+            <button class="button is-dark" onclick="server()">Support Server</button>
+          </div>
+          <img src="./assets/logo.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+
+    <div
+      class="container has-text-left is-flex is-align-items-center is-flex-wrap-wrap is-justify-content-space-between has-text-white py-6"
+      data-aos="fade-up"
+    >
+      <img
+        class="commands img-res"
+        src="./assets/commands/moderation.png"
+        alt="EpicBot - Command utility"
+      />
+      <div class="margin-res">
+        <h1 class="is-size-1 has-text-weight-bold is-family-monospace">
+          Moderation
+        </h1>
+        <ul>
+          <li>
+            <b>Clear</b>
+            This will delete the amount of messages.
+          </li>
+          <li>
+            <b>Kick</b>
+            This will kick the user from the server.
+          </li>
+          <li>
+            <b>Ban</b>
+            This will ban the user from the server.
+          </li>
+          <li>
+            <b>Unban</b>
+            This will unban the user from the server.
+          </li>
+          <li>
+            <b>Warn</b>
+            This will warn the user.
+          </li>
+          <li>
+            <b>Add Role</b>
+            This will add the role mentioned to the user.
+          </li>
+          <li>
+            <b>Remove Role</b>
+            This will remove the role mentioned from the user.
+          </li>
+        </ul>
+      </div>
+      <img
+        class="commands img-res-show"
+        src="./assets/commands/moderation.png"
+        alt="EpicBot - Command utility"
+      />
+    </div>
+
+    <div
+      class="container has-text-left is-flex is-align-items-center is-flex-wrap-wrap is-justify-content-space-between has-text-white py-6"
+      data-aos="fade-up"
+    >
+      <div class="margin-res">
+        <h1 class="is-size-1 has-text-weight-bold is-family-monospace">Fun</h1>
+        <ul>
+          <li>
+            <b>Gif</b>
+            Will show GIFs based on your search query.
+          </li>
+          <li>
+            <b>Meme</b>
+            will show some memes.
+          </li>
+          <li>
+            <b>Say</b>
+            The bot repeat the
+          </li>
+          <li>
+            <b>Random Reddit</b>
+            Will show a random post from the subreddit you specified.
+          </li>
+          <li>
+            <b>Destroy</b>
+            The bot will destroy itself.
+          </li>
+        </ul>
+      </div>
+      <img
+        class="commands"
+        src="./assets/commands/fun.png"
+        alt="EpicBot - Command utility"
+      />
+    </div>
+
+    <div
+      class="container has-text-left is-flex is-align-items-center is-flex-wrap-wrap is-justify-content-space-between has-text-white py-6"
+      data-aos="fade-up"
+    >
+      <img
+        class="commands img-res"
+        src="./assets/commands/image.png"
+        alt="EpicBot - Command utility"
+      />
+      <div class="margin-res">
+        <h1 class="is-size-1 has-text-weight-bold is-family-monospace">
+          Image
+        </h1>
+        <ul>
+          <li>
+            <b>GIF Cat</b>
+            Some cat images.
+          </li>
+          <li>
+            <b>GIF Dog</b>
+            Some dog images.
+          </li>
+          <li>
+            <b>Meme</b>
+            Random post from r/memes.
+          </li>
+          <li>
+            <b>Random Reddit</b>
+            Random post from a subreddit.
+          </li>
+        </ul>
+      </div>
+      <img
+        class="commands img-res-show"
+        src="./assets/commands/image.png"
+        alt="EpicBot - Command utility"
+      />
+    </div>
+
+    <div
+      class="container has-text-left is-flex is-align-items-center is-flex-wrap-wrap is-justify-content-space-between has-text-white py-6"
+      data-aos="fade-up"
+    >
+      <div class="margin-res">
+        <h1 class="is-size-1 has-text-weight-bold is-family-monospace">Bot</h1>
+        <ul>
+          <li>
+            <b>Invite</b>
+            This will send you a link with which you can invite Versa to your
+            own server.
+          </li>
+          <li>
+          <li>
+            <b>About</b>
+            It will show the info about the Versa.
+          </li>
+          <li>
+            <b>Help</b>
+            Lists all commands.
+          </li>
+        </ul>
+      </div>
+      <img
+        class="commands"
+        src="./assets/commands/bot.png"
+        alt="EpicBot - Command utility"
+      />
+    </div>
+
+    <div
+      class="container has-text-left is-flex is-align-items-center is-flex-wrap-wrap is-justify-content-space-between has-text-white py-6"
+      data-aos="fade-up"
+    >
+      <img
+        class="commands img-res"
+        src="./assets/commands/info.png"
+        alt="EpicBot - Command utility"
+      />
+      <div class="margin-res">
+        <h1 class="is-size-1 has-text-weight-bold is-family-monospace">Info</h1>
+        <ul>
+          <li>
+            <b>Avatar</b>
+            Gets covid-19 stats for your country.
+          </li>
+          <li>
+            <b>Profile</b>
+            Gets info about the user.
+          </li>
+          <li>
+            <b>ServerInfo</b>
+            Gets info about the server.
+          </li>
+
+        </ul>
+      </div>
+      <img
+        class="commands img-res-show"
+        src="./assets/commands/info.png"
+        alt="EpicBot - Command utility"
+      />
+    </div>
+
+    <div
+      class="container has-text-left is-flex is-align-items-center is-justify-content-space-between is-flex-direction-column has-text-white py-6"
+      data-aos="fade-up"
+    >
+      <h1 class="title is-1 has-text-white">Stats</h1>
+      <div class="tile is-ancestor w-full">
+        <div class="tile is-parent">
+          <article class="tile is-child box has-background-black-ter">
+            <p class="title has-text-white">Users</p>
+            <p class="subtitle has-text-warning">200+</p>
+          </article>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child box has-background-black-ter">
+            <p class="title has-text-white">Guilds</p>
+            <p class="subtitle has-text-warning">10+</p>
+          </article>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child box has-background-black-ter">
+            <p class="title has-text-white">Commands</p>
+            <p class="subtitle has-text-warning">41</p>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer has-background-black-ter has-text-white">
+      <div class="content has-text-centered"><h1 class="title is-1 has-text-white">Featured Servers</h1><div>
+        <iframe src="https://discord.com/widget?id=892033052988018769&amp;theme=dark" width="350" height="500"
+          allowtransparency="true" frameborder="0"
+          sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                  <iframe src="https://discord.com/widget?id=913444897200169000&amp;theme=dark" width="350" height="500"
+                    allowtransparency="true" frameborder="0"
+                    sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+          </div>
+        <p>
+          Source Code by
+          <strong class="has-text-white">@realGamebreaker</strong>
+        </p>
+        <button class="button is-warning" onclick="server()">Discord server</button>
+      </div>
+    </footer>
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./js/menu.js"></script>
+    <script>
+      function invite() {
+        window.open("https://versa-bot.github.io/invite", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=800,height=900");
+      }
+      function server() {
+        window.open("https://discord.gg/Qy5yV3xCQe");
+
+      }
+    </script>
+  </body>
+</html>
